@@ -1,5 +1,4 @@
 div {
-    border: 2px solid black;
     height: 50px;
 }
 
@@ -7,5 +6,66 @@ nav {
     height: 100px;
     display: grid;
     grid-template: repeat(3, 1fr) / 1fr;
-    border: 3px solid red;
+    
+}
+
+.nav-part1, .nav-part2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-part1 > div, .nav-part2 > div {
+    width: 200px;
+    border: 3px solid green;
+
+}
+
+.grid1 {
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+
+}
+
+.grid2 {
+    display: grid;
+    grid-template: 50px 3fr 3fr / repeat(4, 1fr);
+}
+
+.grid3 {
+    display: grid;
+    grid-template: 1fr 4fr / repeat(4, 1fr);
+}
+
+.grid4 {
+    display: grid;
+    grid-template: 50px repeat(4, 1fr) / repeat(3, 1fr);
+}
+
+.grid5 {
+    display: grid;
+    grid-template: 50px 1fr 1fr / repeat(4, 1fr);
+}
+
+footer > div {
+    display: grid;
+    place-items: center;
+}
+
+@media (max-width: 1024px) {
+    .grid2 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .grid3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid1, .grid3 {
+    grid-template-columns: 1fr;
+    }
+    .grid2 {
+    grid-template-columns: 50px 1fr;
+    }
 }
