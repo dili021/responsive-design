@@ -1,0 +1,11 @@
+div {
+    border: 2px solid black;
+    height: 50px;
+}
+
+nav {
+    height: 100px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    border: 3px solid red;
+}
