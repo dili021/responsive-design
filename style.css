@@ -7,6 +7,9 @@
 nav {
     height: 150px; 
     font-size: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 nav > * {
@@ -30,8 +33,17 @@ ul {
     padding: 10px;
 }
 
+
+
 .nav-part1 {
     background-color: black;
+}
+
+ .nav-part2 {
+    position: sticky;
+    top: 0;
+    z-index: 10; 
+    background: white;
 }
 
 .nav-part2 li:hover {
@@ -59,49 +71,65 @@ ul {
 
 
 /* main */
+@media(min-width:768px) {
 .grid1 {
-    display:flex;
-    flex-wrap: wrap;
-    margin: 5px;
+    display:block;
+    height: 60vh;
+    position: relative;
+    margin: 1px 10px;
+}
 }
 
 .grid1-item1 {
-    background-image: url("/assets/Whatsapp-bug-warning-796x420.jpg");
+    background-image: url("assets/Whatsapp-bug-warning-796x420.jpg");
     background-position: center;
-    height: 400px;
+    height: 100%;
     width: 60%;
     position: relative;
+    float: left;
 
 }
 
-.item1-link {
+.grid-links, .grid-links1 {
     position: absolute;
     bottom: 0px;
-    margin: 2px;
+    margin: 10px;
 }
 
-.item1-link > a {
+.grid-links1 > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
     font-size: 35px;
+}
+
+.grid-links > a {
+    font-size: 15px;
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-.item1-link small *,
-.item1-link small {
+.grid-links span,
+.grid-links1 span {
+    color: white;
+}
+
+.grid1 small *,
+.grid1 small {
     color: gray;
     text-decoration: none;
     padding: 6px;
 }
 
-.overlay {
+.overlay1 {
     width: 100%;
     height: 100%;
     position: relative;
     background: linear-gradient(130deg, red, rgba(0, 0, 0, 0.671)90%);
 }
 
-.overlay img{
+.overlay1 img{
     margin: 0 30px;
     position: absolute;
     top: -55px;
@@ -110,19 +138,101 @@ ul {
     
 }
 
-
-    
-
-
-.overlay span {
+.overlay1 span {
     float: right;
     color: lightgray;
     margin: 15px;
 }
 
+.overlay2 {
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, black 10%, rgba(0, 0, 0, 0.247));
+}
+
+.grid1-item2 {
+    position: absolute;
+    background: url("assets/trainupscale-796x448.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 48%;
+    width: 39%;
+    right: 0px;
+}
+
+.grid1-item3 {
+    position: absolute;
+    background: url("assets/YouTube-Rewind-2019-796x417.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 48%;
+    width: 39%;
+    right: 0;
+    bottom: 0;
+}
+
+.main-grids {
+    margin: 25px 90px;
+}
+
+.latest {
+    margin: -10px;
+}
+
+.grid2-header {
+    padding: 10px;
+    color: orangered;
+    display: inline-block;
+}
+.grid2-header:hover {
+    cursor: pointer;
+    color: black;
+}
+
 .grid2 {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
+}
+
+.grid2 > div {
+    max-width: 25%;
+    flex: 25%;
+    padding: 10px;
+}
+
+.grid2 img:hover {
+    cursor: pointer;
+}
+
+.grid2 small:hover {
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+}
+
+.grid2 img {
+    height: 200px;
+    width: 100%; 
+    display: block;
+}
+
+.grid2 a {
+    word-wrap: break-word;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.grid2 a:hover {
+    text-decoration: underline;
+    color: orangered;
+}
+
+.grid2 small {
+    color: gray;
+    font-size: smaller;
 }
 
 .grid3 {
@@ -153,11 +263,73 @@ ul {
     .grid3-item5 {
         display: none;
     }
-    .overlay {
+    .overlay1 {
         display: none;
+    }
+    .grid2 > div {
+        flex: 33.33%;
+        max-width: 33.33%;
     }
 }
 
 @media (max-width: 768px) {
+    .grid1 {
+        display: grid;
+        grid-template: repeat(3, 200px) / 1fr;
+        grid-gap: 5px;
+    }
+
+    .grid1-item1 {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .grid-links1 {
+        position: absolute;
+        bottom: 0px;
+        margin: 10px;
+    }
+
+    .grid-links1 a {
+        font-size: 15px;
+    }
+
+    .grid1-item2 {
+        position: relative;
+        height: 100%;
+        width: 100%
+    }
+
+    .grid1-item3 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .latest {
+        margin: 0 -80px;
+    }
+
+    .grid2 > div {
+        max-width: 100%;
+        min-height: 70px;
+        flex-basis: 100%;
+        position: relative;
+        padding: 5px;
+        overflow: hidden;
+    }
     
+    .grid2 img {
+        height: 80px;
+        width: 80px;
+        /* display: inline-block; */
+        float: left;
+        margin: 3px;
+        
+    }
 }
