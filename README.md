@@ -1,6 +1,6 @@
 > Responsive Design
 
-![screenshot](assets/screenshot.png)
+![screenshot]("assets/screenshot.png")
 
 A fully responsive clone of The Next Web homepage
 
