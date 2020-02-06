@@ -1,6 +1,6 @@
 > Responsive Design
 
-![screenshot]("assets/Screenshot_2020-02-06 the next web clone.png")
+![screenshot](assets/screenshot.png)
 
 A fully responsive clone of The Next Web homepage
 
