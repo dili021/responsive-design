@@ -72,6 +72,7 @@ nav ul {
 
 /* main */
 @media(min-width:768px) {
+
 .grid1 {
     display:block;
     height: 60vh;
@@ -304,6 +305,10 @@ nav ul {
     color: white;
 }
 
+.text-wrap h2 {
+    font-size: 16px;
+}
+
 .text-wrap small{
     color: gray;
 }
@@ -528,9 +533,23 @@ nav ul {
         flex: 33.33%;
         max-width: 33.33%;
     }
+    .grid4-item1 {
+        flex: 50%;
+        max-width: 50%;
+    }
+    .grid5-item1 {
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
+
 }
 
 @media (max-width: 768px) {
+
+    .main-grids {
+        margin: 15px 0;
+    }
+
     .grid1 {
         display: grid;
         grid-template: repeat(3, 200px) / 1fr;
@@ -544,7 +563,6 @@ nav ul {
     }
 
     .funding{
-        position: absolute;
         left: 0;
         right: 0;
         padding: 20px;
@@ -558,6 +576,39 @@ nav ul {
         max-width: 100%;
     }
 
+    .grid4-item1 {
+        flex: 80%;
+        max-width: 80%;
+    }
+    .grid5 header {
+        padding: 10px;
+    }
+    .grid5 header a {
+        padding: 0 20px;
+    }
+    .grid5-item1 {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .grid5-img {
+        width: 78px;
+        height: 80px;
+        float: left;
+        margin-right: 10px;
+    }
+    .ribon {
+        right: -40px;
+        top: -20px;
+        font-size: 12px;
+    }
+    .grid5-item1 > * {
+        padding: 4px;
+    }
+    .grid5-item1 h2 {
+        font-size: 16px;
+        
+
+    }
     nav {
         display: none;
     }
@@ -585,7 +636,7 @@ nav ul {
     }
 
     .latest {
-        margin: 0 -80px;
+        padding: 20px;
     }
 
     .grid2 > div {
@@ -600,9 +651,15 @@ nav ul {
     .grid2 img {
         height: 80px;
         width: 80px;
-        /* display: inline-block; */
         float: left;
         margin: 3px;
         
+    }
+
+    footer {
+        font-size: 12px;
+    }
+    .footer-bottom p {
+        padding: 0 150px;
     }
 }
