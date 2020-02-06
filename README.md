@@ -1,8 +1,8 @@
 > Responsive Design
 
-![screenshot]()
+![screenshot]("assets/Screenshot_2020-02-06 the next web clone.png")
 
-A heatmap of the smashing magazine website
+A fully responsive clone of The Next Web homepage
 
 ## Built With
 
@@ -11,7 +11,7 @@ A heatmap of the smashing magazine website
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://boring-euclid-37ebf1.netlify.com/)
 
 ## Getting Started
 
@@ -31,8 +31,6 @@ Clone or fork this repo and play around with it as you wish
 - Install VSCode or any code editor you like
 - Install Node JS and nmp(most recents versions)
 - Run this command on your terminal in order to install stylelint: npm install stylelint stylelint-config-recommended --save-dev
-
-### Usage
 
 ### Run tests
 
