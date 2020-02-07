@@ -516,11 +516,12 @@ nav ul {
 }
 
 .footer-bottom {
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: center;
   background-color: black;
   color: white;
-  height: 100px;
+  height: 120px;
+  
 }
 
 .footer-bottom span {
@@ -581,6 +582,9 @@ nav ul {
   .grid5-item1 {
     flex: 33.33%;
     max-width: 33.33%;
+  }
+  .footer-bottom{
+    margin: auto;
   }
 }
 
@@ -650,6 +654,20 @@ nav ul {
     max-width: 80%;
   }
 
+  .grid5{
+      padding-left: 10px;
+  }
+  .grid4 {
+      justify-content: center;
+  }
+  .font-icons-text{
+     text-align: center;
+  }
+  
+  .footer-bottom{
+      text-align: center;
+      padding-bottom: 15px;
+  }
   .grid5 header {
     padding: 10px;
   }
