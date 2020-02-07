@@ -31,7 +31,7 @@ nav li {
 .font-icons li,
 .font-icons-text li {
   display: inline;
-  padding: 10px;
+  padding: 3px;
 }
 
 .font-icons-text li {
@@ -517,7 +517,6 @@ nav ul {
   background-color: black;
   color: white;
   height: 120px;
-  
 }
 
 .footer-bottom span {
@@ -529,18 +528,19 @@ nav ul {
 }
 
 @media (max-width: 1024px) {
-
   .mobile-nav img {
     display: inline-block;
-    
   }
+
   .part2-item1.mob {
     display: inline-block;
     margin: 10px 0;
   }
-   .main-grids {
+
+  .main-grids {
     margin: 25px 10px;
   }
+
   .grid3-item5 {
     display: none;
   }
@@ -548,10 +548,11 @@ nav ul {
   .funding-header h2 {
     display: block;
   }
+
   .funding-header .links {
     float: none;
-    
   }
+
   .overlay1 {
     display: none;
   }
@@ -579,31 +580,33 @@ nav ul {
     flex: 33.33%;
     max-width: 33.33%;
   }
-  .footer-bottom{
+
+  .footer-bottom {
     margin: auto;
   }
 }
 
 @media (max-width: 767px) {
-  
   .mobile-nav {
     display: block;
     position: fixed;
     background: white;
     height: 70px;
-    width: 100vw;
+    width: 100%;
     padding: 5px;
   }
+
   .part1-item1.mob,
   .part2-item1.mob {
     display: none;
-
   }
+
   .mobile-nav img {
     height: 100%;
     width: 20vw;
     display: inline-block;
   }
+
   .mobile-nav .fa-search,
   .mobile-nav .fa-bars {
     float: right;
@@ -614,9 +617,11 @@ nav ul {
   .mobile-nav .fa-bars {
     color: orangered;
   }
+
   .main-grids {
     margin: 15px 0;
   }
+
   .grid1 {
     display: grid;
     grid-template: repeat(3, 200px) / 1fr;
@@ -650,17 +655,20 @@ nav ul {
     max-width: 80%;
   }
 
-  .grid5{
-      padding-left: 10px;
+  .grid5 {
+    padding-left: 10px;
   }
+
   .grid4 {
-      justify-content: center;
+    justify-content: center;
   }
-  .font-icons-text{
-     text-align: center;
-     padding: none;
+
+  .font-icons-text {
+    text-align: center;
+    padding: none;
+    width: 100vw;
   }
-  
+
   .grid5 header {
     padding: 10px;
   }
@@ -745,11 +753,16 @@ nav ul {
     font-size: 12px;
   }
 
+  .font-icons-text ul {
+    display: flex;
+    width: 60vw;
+    margin-left: 0;
+  }
+
   .footer-bottom p {
-    padding: 0 150px;
+    padding: 0 100px;
   }
-  }
-  
+}
 
 @media (min-width: 768px) {
   .grid1 {
@@ -759,29 +772,41 @@ nav ul {
     position: relative;
     margin: 1px 10px;
   }
+
   nav {
     height: auto;
   }
+
   nav img {
     display: block;
     width: 150px;
     height: 100px;
   }
+
   .desktop-nav {
     display: flex;
   }
+
   .flex-wrap {
-    width: 100%;;
+    width: 100%;
   }
+
+  .grid2-item1 {
+    flex: 33.33%;
+  }
+
   .mobile-nav .fa-bars {
     display: none;
   }
+
   .part2-item1.mob {
     display: block;
   }
+
   .nav-part3 {
     display: none;
   }
+
   .part1-item2 {
     display: none;
   }
