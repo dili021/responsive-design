@@ -7,11 +7,29 @@
 nav {
   height: 150px;
   font-size: 12px;
-  position: sticky;
-  top: 0;
   z-index: 10;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+nav img {
+  display: none;
+}
+/* .navlogo {
+  height: 100%;
+  width: 200px;
+  padding: 0;
+  background-image: url(assets/navlogo.jpg);
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat; */
+
+}
 nav > * {
   padding: 10px;
 }
@@ -51,7 +69,6 @@ nav ul {
 }
 
 .nav-part2 {
-  position: sticky;
   top: 0;
   z-index: 10;
   background: white;
@@ -88,6 +105,7 @@ nav ul {
 @media (min-width: 768px) {
   .grid1 {
     display: block;
+    clear: both;
     height: 60vh;
     position: relative;
     margin: 1px 10px;
@@ -569,6 +587,30 @@ nav ul {
 }
 
 @media (max-width: 768px) {
+  
+  .mobile-nav {
+    display: block;
+    position: relative;
+    height: 70px;
+    width: 100vw;
+    padding: 5px;
+  }
+
+  .mobile-nav img {
+    height: 100%;
+    width: 20vw;
+    display: inline-block;
+  }
+  .mobile-nav .fa-search,
+  .mobile-nav .fa-bars {
+    float: right;
+    border-left: 2px solid rgb(223, 220, 220);
+    padding: 10px;
+  }
+
+  .mobile-nav .fa-bars {
+    color: orangered;
+  }
   .main-grids {
     margin: 15px 0;
   }
