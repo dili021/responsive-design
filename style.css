@@ -18,10 +18,6 @@ nav img {
   display: none;
 }
 
-nav > * {
-  padding: 10px;
-}
-
 nav li {
   display: inline-block;
   padding: 0 5px;
@@ -621,11 +617,14 @@ nav ul {
   .main-grids {
     margin: 15px 0;
   }
-
+  /* main {
+    margin-top: 30px; */
+  }
   .grid1 {
     display: grid;
     grid-template: repeat(3, 200px) / 1fr;
     grid-gap: 5px;
+    padding-top: 70px;
   }
 
   .grid1-item1 {
@@ -764,9 +763,13 @@ nav ul {
     position: relative;
     margin: 1px 10px;
   }
+  nav {
+    height: auto;
+  }
   nav img {
     display: block;
     width: 150px;
+    height: 100px;
   }
   .desktop-nav {
     display: flex;
