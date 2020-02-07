@@ -659,12 +659,9 @@ nav ul {
   }
   .font-icons-text{
      text-align: center;
+     padding: none;
   }
   
-  .footer-bottom{
-      text-align: center;
-      padding-bottom: 15px;
-  }
   .grid5 header {
     padding: 10px;
   }
