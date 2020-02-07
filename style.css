@@ -605,6 +605,9 @@ nav ul {
     max-width: 80%;
   }
 
+  .grid4{
+      justify-content: center;
+  }
   .grid5 header {
     padding: 10px;
   }
