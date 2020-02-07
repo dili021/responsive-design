@@ -17,19 +17,7 @@ nav {
 nav img {
   display: none;
 }
-/* .navlogo {
-  height: 100%;
-  width: 200px;
-  padding: 0;
-  background-image: url(assets/navlogo.jpg);
-  background-size: contain;
-  background-position: center;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-repeat: no-repeat; */
 
-}
 nav > * {
   padding: 10px;
 }
@@ -102,15 +90,6 @@ nav ul {
 
 
 /* main */
-@media (min-width: 768px) {
-  .grid1 {
-    display: block;
-    clear: both;
-    height: 60vh;
-    position: relative;
-    margin: 1px 10px;
-  }
-}
 
 .grid1-item1 {
   background-image: url("assets/Whatsapp-bug-warning-796x420.jpg");
@@ -393,7 +372,7 @@ nav ul {
 
 .funding-header h2 {
   display: inline-block;
-  margin-top: 10px;
+  margin: 10px;
 }
 
 .grid5 > header > h2 {
@@ -553,10 +532,29 @@ nav ul {
 }
 
 @media (max-width: 1024px) {
+
+  .mobile-nav img {
+    display: inline-block;
+    
+  }
+  .part2-item1.mob {
+    display: inline-block;
+    margin: 10px 0;
+  }
+   .main-grids {
+    margin: 25px 10px;
+  }
   .grid3-item5 {
     display: none;
   }
 
+  .funding-header h2 {
+    display: block;
+  }
+  .funding-header .links {
+    float: none;
+    
+  }
   .overlay1 {
     display: none;
   }
@@ -586,16 +584,21 @@ nav ul {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   
   .mobile-nav {
     display: block;
-    position: relative;
+    position: fixed;
+    background: white;
     height: 70px;
     width: 100vw;
     padding: 5px;
   }
+  .part1-item1.mob,
+  .part2-item1.mob {
+    display: none;
 
+  }
   .mobile-nav img {
     height: 100%;
     width: 20vw;
@@ -733,5 +736,36 @@ nav ul {
 
   .footer-bottom p {
     padding: 0 150px;
+  }
+}
+@media (min-width: 768px) {
+  .grid1 {
+    display: block;
+    clear: both;
+    height: 60vh;
+    position: relative;
+    margin: 1px 10px;
+  }
+  nav img {
+    display: block;
+    width: 150px;
+  }
+  .desktop-nav {
+    display: flex;
+  }
+  .flex-wrap {
+    width: 100%;;
+  }
+  .mobile-nav .fa-bars {
+    display: none;
+  }
+  .part2-item1.mob {
+    display: block;
+  }
+  .nav-part3 {
+    display: none;
+  }
+  .part1-item2 {
+    display: none;
   }
 }
