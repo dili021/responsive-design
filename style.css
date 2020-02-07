@@ -617,9 +617,6 @@ nav ul {
   .main-grids {
     margin: 15px 0;
   }
-  /* main {
-    margin-top: 30px; */
-  }
   .grid1 {
     display: grid;
     grid-template: repeat(3, 200px) / 1fr;
@@ -751,7 +748,9 @@ nav ul {
   .footer-bottom p {
     padding: 0 150px;
   }
-}
+  }
+  
+
 @media (min-width: 768px) {
   .grid1 {
     display: block;
