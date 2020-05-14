@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-[Demo Link](https://boring-euclid-37ebf1.netlify.com/)
+- [Demo Link](https://boring-euclid-37ebf1.netlify.com/)
 
 ## Getting Started
 
