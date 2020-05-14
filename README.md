@@ -1,8 +1,8 @@
-> Responsive Design
+> Responsive Design - building websites adaptable to different screen sizes
 
 ![screenshot](assets/screenshot.png)
 
-A fully responsive clone of The Next Web homepage
+- A fully responsive clone of [The Next Web homepage](https://thenextweb.com)
 
 ## Built With
 
@@ -11,35 +11,32 @@ A fully responsive clone of The Next Web homepage
 
 ## Live Demo
 
-[Live Demo Link](https://boring-euclid-37ebf1.netlify.com/)
+[Demo Link](https://boring-euclid-37ebf1.netlify.com/)
 
 ## Getting Started
 
-Clone or fork this repo and play around with it as you wish
+- Clone the repo to your machine
+- Open with chosen text editor
+- Experiment with editing the HTML and CSS files
 
 ### Prerequisites
 
 - Get your browsers up to date
 
-### Setup
-
-- Clone the repository on your local machine
-- cd into the folder, find the index.html file and open it
-
 ### Install
 
 - Install VSCode or any code editor you like
 - Install Node JS and nmp(most recents versions)
-- Run this command on your terminal in order to install stylelint: npm install stylelint stylelint-config-recommended --save-dev
+- Run this command on your terminal in order to install stylelint `npm install stylelint stylelint-config-recommended --save-dev`
 
 ### Run tests
 
-- Test the css by typing the command: npx stylelint .
+- Test the css by running `npx stylelint .`
 - Go to http://validator.w3.org/ , upload the index.html file to test it.
 
 ### Deployment
 
-- Get an online web hosting
+- Choose an online web hosting service
 - Upload all the files in the htdocs folder of your domain
 - Access your domain name in browser
 
@@ -61,16 +58,8 @@ Aremu Lucky
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page]().
+- Contributions, issues and feature requests are welcome!
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- [Responsive design](https://thenextweb.com/)
-
-## 📝 License
